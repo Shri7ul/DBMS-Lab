@@ -35,32 +35,32 @@ INSERT INTO course VALUES
 ('FIN-201', 'Investment Banking', 'Finance', 3);
 
 
-1. SELECT * FROM instructor
+1. SELECT * FROM instructor ;
 
-2. SELECT course_id,title FROM course
+2. SELECT course_id,title FROM course ;
 
 3. SELECT name,dept_name FROM instructor 
-   WHERE id = 22222
+   WHERE id = 22222 ;
 
 4. SELECT title,credits FROM course
-   WHERE dept_name = 'Comp. Sci.'
+   WHERE dept_name = 'Comp. Sci.' ;
 
 5. SELECT name,dept_name FROM instructor
-   WHERE salary>= 70000
+   WHERE salary>= 70000 ;
 
 6. SELECT title FROM course
-   WHERE credits < 4
+   WHERE credits < 4 ;
 
 7. SELECT name,dept_name FROM instructor
-   WHERE salary >=80000 AND salary<=100000
+   WHERE salary >=80000 AND salary<=100000 ;
 
 8. SELECT title,credits FROM course
-   WHERE dept_name != 'Comp. Sci.'
+   WHERE dept_name != 'Comp. Sci.' ;
 
-9. SELECT * FROM instructor
+9. SELECT * FROM instructor ;
 
 10. SELECT * FROM course
-    WHERE dept_name = 'Biology' AND credits != 4
+    WHERE dept_name = 'Biology' AND credits != 4 ;
 
 11. SELECT dept_name FROM course
     GROUP BY dept_name;
