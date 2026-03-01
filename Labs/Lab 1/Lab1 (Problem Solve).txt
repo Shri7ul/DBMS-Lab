@@ -1,0 +1,70 @@
+CREATE TABLE instructor(
+    id INT PRIMARY KEY,
+    name VARCHAR(50),
+    Dept_name VARCHAR(20),
+    salary DECIMAL
+    );
+    
+
+CREATE TABLE course(
+    course_id VARCHAR(20) PRIMARY KEY,
+    title VARCHAR(50),
+    Dept_name VARCHAR(20),
+    credits INT
+    );
+
+INSERT INTO instructor VALUES
+(10101, 'Srinivasan', 'Comp. Sci.', 65000.50),
+(12121, 'Wasif', 'Finance', 90000),
+(15151, 'Mozart', 'Music', 40000),
+(22222, 'Einstein', 'Physics', 95000),
+(32343, 'El Said', 'History', 60000),
+(33456, 'Goblin', 'Physics', 87000.50),
+(45565, 'Katz', 'Comp. Sci.', 75000),
+(58583, 'Califieri', 'History', 62000);
+
+INSERT INTO course VALUES
+('BIO-101', 'Intro. to Biology', 'Biology', 4),
+('BIO-301', 'Genetics', 'Biology', 4),
+('BIO-399', 'Computational Biology', 'Biology', 3),
+('CS-101', 'Intro. to Computer Science', 'Comp. Sci.', 4),
+('CS-190', 'Game Design', 'Comp. Sci.', 4),
+('CS-319', 'Image Processing', 'Comp. Sci.', 3),
+('CS-347', 'Database System Concepts', 'Comp. Sci.', 3),
+('EE-181', 'Intro. to Digital Systems', 'Elec. Eng.', 3),
+('FIN-201', 'Investment Banking', 'Finance', 3);
+
+
+1. SELECT * FROM instructor
+
+2. SELECT course_id,title FROM course
+
+3. SELECT name,dept_name FROM instructor 
+   WHERE id = 22222
+
+4. SELECT title,credits FROM course
+   WHERE dept_name = 'Comp. Sci.'
+
+5. SELECT name,dept_name FROM instructor
+   WHERE salary>= 70000
+
+6. SELECT title FROM course
+   WHERE credits < 4
+
+7. SELECT name,dept_name FROM instructor
+   WHERE salary >=80000 AND salary<=100000
+
+8. SELECT title,credits FROM course
+   WHERE dept_name != 'Comp. Sci.'
+
+9. SELECT * FROM instructor
+
+10. SELECT * FROM course
+    WHERE dept_name = 'Biology' AND credits != 4
+
+11. SELECT dept_name FROM course
+    GROUP BY dept_name;
+
+    SELECT DISTINCT dept_name
+    FROM course;
+
