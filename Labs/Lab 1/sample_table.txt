@@ -1,0 +1,12 @@
+CREATE DATABASE University;
+USE University;
+
+CREATE TABLE Student(
+id int not null,
+name varchar(50),
+dept varchar(50),
+age int,
+primary key(id)
+);
+
+SELECT * FROM Student;
